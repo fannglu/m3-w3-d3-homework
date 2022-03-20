@@ -1,1 +1,18 @@
 /* Nest Nav */
+@import url("/scss/colors.scss");
+
+nav {
+    background-color: $background-color;
+    ul{
+        list-style-type: none;
+    }
+    li {
+        display: inline-block;
+        color: $color-white;
+        text-align: right;
+        padding-left: 3em;
+    }
+    a {
+        text-decoration: none;
+    }
+}

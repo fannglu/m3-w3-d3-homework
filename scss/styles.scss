@@ -1,10 +1,55 @@
 /* Variables */
+@import url("/scss/colors.scss");
 
+$font-aria: "Arial, Helvetica, Sans-Serif";
+$font-sacramento: "Sacramento";
+
+@import url("/scss/nav.scss");
 
 /* Nest Main */
 main {
     width: 1350px;
     min-height:535px;
+    border: 2em;
+    border-color: $color-white;
+
+    #intro-text section {
+        text-align: center;
+        padding: 2em; 
+        background-color: $color-grey;
+
+        span {
+            font-family: $font-sacramento;
+            color: $color-dark;
+        }
+       
+        h3 {
+            font-weight: bolder;
+            width: 50%;
+            font-size: 16px;
+            color: $color-dark;
+        }
+
+        p {
+            font-size: 14px;
+            font-family: $font-aria;
+            color: $color-dark;
+        }
+
+        button {
+            background-color: $background-color;
+            color: $color-white;
+        }
+    }
+
+    #intro-image section {
+        img {
+            align-items: flex-end;
+            width: 18em;
+            height: auto;
+        }
+    }
+
 }
 
 // Mixin or Extend for button

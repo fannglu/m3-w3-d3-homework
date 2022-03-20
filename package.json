@@ -1,0 +1,33 @@
+{
+  "name": "m3-wk3-day3-homework",
+  "version": "1.0.0",
+  "description": "\"m3-wk3-d3-homework\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fannglu/m3-w3-d3-homework.git"
+  },
+  "author": "Fang Lu Lim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fannglu/m3-w3-d3-homework/issues"
+  },
+  "homepage": "https://github.com/fannglu/m3-w3-d3-homework#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node": "^17.7.1",
+    "node-sass": "^7.0.1",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.2",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
