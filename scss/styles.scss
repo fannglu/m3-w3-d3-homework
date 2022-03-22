@@ -1,55 +1,76 @@
 /* Variables */
-@import url("/scss/colors.scss");
+@import "colors.scss";
 
-$font-aria: "Arial, Helvetica, Sans-Serif";
-$font-sacramento: "Sacramento";
+$font-aria: Arial, Helvetica, sans-serif;
+$font-sacramento: "Sacramento", cursive;
 
-@import url("/scss/nav.scss");
+@import "nav.scss";
 
-/* Nest Main */
-main {
-    width: 1350px;
-    min-height:535px;
-    border: 2em;
-    border-color: $color-white;
-
-    #intro-text section {
-        text-align: center;
-        padding: 2em; 
-        background-color: $color-grey;
-
-        span {
-            font-family: $font-sacramento;
-            color: $color-dark;
-        }
-       
-        h3 {
-            font-weight: bolder;
-            width: 50%;
-            font-size: 16px;
-            color: $color-dark;
-        }
-
-        p {
-            font-size: 14px;
-            font-family: $font-aria;
-            color: $color-dark;
-        }
-
-        button {
-            background-color: $background-color;
-            color: $color-white;
-        }
-    }
-
-    #intro-image section {
-        img {
-            align-items: flex-end;
-            width: 18em;
-            height: auto;
-        }
-    }
-
+@mixin style-aria {
+  font-family: $font-aria;
 }
 
+/* Nest Main */
+body {
+  background-color: $background-color;
+  @include style-aria;
+
+  main {
+    display: flex;
+    text-align: center;
+    background-color: $color-white;
+    padding: 2em;
+    margin: 2em 1em;
+
+    #intro-text {
+      text-align: center;
+      padding: 5em 0;
+      background-color: $color-grey;
+      border-color: $color-white;
+      border: 1em;
+      width: 50%;
+      align-items: flex-start;
+
+      span {
+        font-family: $font-sacramento;
+        color: $color-dark;
+        font-size: 20px;
+      }
+
+      h3 {
+        font-weight: bolder;
+        font-size: 16px;
+        color: $color-dark;
+        text-align: center;
+      }
+
+      p {
+        font-size: 15px;
+        font-family: $font-aria;
+        color: $color-dark;
+      }
+
+      button {
+        background-color: $background-color;
+        color: $color-white;
+        border: none;
+        padding: 1em 1em;
+      }
+    }
+
+    #intro-image {
+      width: 50%;
+      align-items: flex-end;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  footer {
+    margin: 1em 2em;
+    padding-right: 4em;
+  }
+}
 // Mixin or Extend for button
+
